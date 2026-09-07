@@ -1,10 +1,10 @@
 #include <iostream>
 int main (){
     int n,m ;
-std::cout << "введите два числа\n";
+std::cout << "введите два числа натуральных числа для нахождения общих делителей\n";
 std::cin >> n >> m;
 if ( n<=0 || m<= 0){
-    std::cout << "wrong text";
+    std::cout << "Введите положительное число ";
     return 0;
 }else
 std:: cout << "1" << " " ;
