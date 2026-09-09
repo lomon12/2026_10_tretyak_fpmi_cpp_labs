@@ -7,4 +7,5 @@ int main(){
     std::cin >> count;
     sum = count*count;
     std::cout << "Сумма чисел :" << sum;
+    return 0 ;
 }
