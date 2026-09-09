@@ -16,5 +16,5 @@ num /= 10;
         std::cout << "палиндром";
     } else 
     std::cout << "не палиндром";
-   
+   return 0;
 }
