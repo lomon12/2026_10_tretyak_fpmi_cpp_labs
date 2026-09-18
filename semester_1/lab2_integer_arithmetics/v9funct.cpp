@@ -1,8 +1,10 @@
 #include <iostream>
 
+bool IsPalindrom (int n);
+    
+
 int main(){
     int a,b;
-    int orig;
     std::cout << "Введите диапоз [a,b] на котором вы хотите найти все палиндромы\n";
     if (!(std::cin >> a >> b)){
         
@@ -15,8 +17,21 @@ int main(){
     }else
 
     for( int i = a; i <= b ; i++ ){
-        orig = i;
-        int temp = i;
+        if(IsPalindrom(i)){
+            std::cout << i << " " ;
+        }
+
+    }
+
+    return 0;
+}
+
+
+
+bool IsPalindrom (int n){
+
+        int orig = n;
+        int temp = n ;
         int reverse = 0;
 
         while (temp >0){
@@ -24,12 +39,5 @@ int main(){
             reverse = reverse * 10 + lastnum;
             temp /= 10;
         }
-
-        if ( orig == reverse){
-            std::cout << orig << " ";
-        }else;
+        return orig == reverse;
     }
-
-    return 0;
-}
-//
