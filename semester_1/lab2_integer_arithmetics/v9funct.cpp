@@ -20,7 +20,6 @@ int main(){
         if(IsPalindrom(i)){
             std::cout << i << " " ;
         }
-
     }
 
     return 0;
