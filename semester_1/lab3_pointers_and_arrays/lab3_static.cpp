@@ -1,5 +1,5 @@
 #include <iostream>
-
+//variant9
 const size_t MAX_LENGHT = 100000;
 
 void TryRead (int &arr_lenght);
