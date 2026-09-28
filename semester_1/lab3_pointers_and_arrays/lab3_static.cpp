@@ -1,26 +1,30 @@
 #include <iostream>
+#include <random>
 //variant9
+// 2 версии программы, можно раскоментить код и получить создание массива вручную а не рандомом
 const size_t MAX_LENGHT = 100000;
 
 void TryRead (int &arr_lenght);
 bool IsNormal (int &number);
+void FillArrayRand (int* arr, size_t size,std::mt19937* gen, int min = -10000, int max = 10000);
 void ReadArray(int* arr, size_t size);
 void ArrayMix(int* arr, size_t size);
 void PrintArray(int* arr, size_t size);
 
 
 int main() {
+    std::random_device rd;
+    std::mt19937 gen(rd());
     int arr_lenght;
     int arr[MAX_LENGHT];
     std::cout << "enter the lenght of array \n"; 
     IsNormal(arr_lenght);
-    std::cout << "enter your array \n"; 
-    ReadArray(arr, arr_lenght);
+    //std::cout << "enter your array \n"; 
+    //ReadArray(arr, arr_lenght);
+    FillArrayRand(arr,arr_lenght,&gen);
+    PrintArray(arr, arr_lenght);
     ArrayMix(arr,arr_lenght);
     PrintArray(arr, arr_lenght);
-
-
-
 
     return 0;
 }
@@ -69,3 +73,13 @@ void PrintArray(int* arr, size_t size) {
     }
     std::cout << std::endl;
 }
+
+void FillArrayRand (int* arr, size_t size, std::mt19937* gen, int min, int max) {
+    std::uniform_int_distribution<int> dist(min, max);
+    for (size_t i = 0; i < size; i++) {
+        arr[i] = dist(*gen); 
+    }
+}
+
+
+
