@@ -49,24 +49,16 @@ void ReadArray(int* arr, size_t size){
 }
 
 void ArrayMix(int* arr, size_t size){
-    int result[size];
-    int k = 0;
     for(int i = 0; i < size; i++){
-        if(arr[i] < 0 ){
-            result[k] = arr[i];
-            k++;
+        if( arr[i] < 0){
+            int num = arr[i];
+            int j = i-1;
+            while( j >= 0 && arr[j] >= 0){
+                arr[j+1] = arr[j];
+                j--;
+            }
+            arr[j+1] = num;
         }
-    }
-
-    for(int i = 0; i < size; i++){
-        if(arr[i] > 0 ){
-            result[k] = arr[i];
-            k++;
-        }
-    }
-    for (int i = 0; i < size; i++)
-    {
-        arr[i] = result[i];
     }
 }
 
