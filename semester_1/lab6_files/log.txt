@@ -1,0 +1,28 @@
+12.11.2026 23:32:46 | Program started
+12.11.2026 23:32:46 | ERROR: Cannot open file: input.txt
+12.11.2026 23:33:27 | Program started
+12.11.2026 23:33:27 | Input file successfully read
+12.11.2026 23:33:27 | Pair 1 processed
+12.11.2026 23:33:27 | Results successfully written to output.txt
+12.11.2026 23:33:27 | Program finished
+12.11.2026 23:34:07 | Program started
+12.11.2026 23:34:07 | Input file successfully read
+12.11.2026 23:34:07 | Pair 1 processed
+12.11.2026 23:34:07 | Pair 2 processed
+12.11.2026 23:34:07 | Pair 3 processed
+12.11.2026 23:34:07 | Pair 4 processed
+12.11.2026 23:34:07 | Pair 5 processed
+12.11.2026 23:34:07 | Pair 6 processed
+12.11.2026 23:34:07 | Pair 7 processed
+12.11.2026 23:34:07 | Results successfully written to output.txt
+12.11.2026 23:34:07 | Program finished
+12.11.2026 23:34:22 | Program started
+12.11.2026 23:34:22 | Input file successfully read
+12.11.2026 23:34:22 | Pair 1 processed
+12.11.2026 23:34:22 | Results successfully written to output.txt
+12.11.2026 23:34:22 | Program finished
+12.11.2026 23:40:42 | Program started
+12.11.2026 23:40:42 | Input file successfully read
+12.11.2026 23:40:42 | Pair 1 processed
+12.11.2026 23:40:42 | Results successfully written to output.txt
+12.11.2026 23:40:42 | Program finished
